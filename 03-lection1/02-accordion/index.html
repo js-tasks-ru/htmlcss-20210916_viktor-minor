@@ -1,18 +1,41 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
-<html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
-            </summary>
-            <p>
-                Hidden content
-            </p>
-        </details>
-    </body>
+<html lang='ru'>
+<head>
+  <link rel='stylesheet' href='../../assets/css/main.css'>
+  <link rel='stylesheet' href='./accordion.css'>
+  <style>
+      .preview__accordion:not(:last-child) {
+          margin-bottom: 8px;
+      }
+  </style>
+</head>
+<body>
+<div class='preview'>
+  <details class='accordion preview__accordion'>
+    <summary class='accordion__summary'>
+      Accordion item 1
+    </summary>
+    <p class='accordion__item'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+      aperiam architecto beatae dignissimos distinctio ea est expedita
+      inventore iure magnam nam nulla officiis placeat quia quisquam
+      quos reprehenderit temporibus vero? Blanditiis distinctio dolorem
+      doloremque dolores provident quisquam velit? Magni, possimus.
+    </p>
+  </details>
+  <details class='accordion preview__accordion'>
+    <summary class='accordion__summary'>
+      Accordion item 2
+    </summary>
+    <p class='accordion__item'>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+      aperiam architecto beatae dignissimos distinctio ea est expedita
+      inventore iure magnam nam nulla officiis placeat quia quisquam
+      quos reprehenderit temporibus vero? Blanditiis distinctio dolorem
+      doloremque dolores provident quisquam velit? Magni, possimus.
+    </p>
+  </details>
+</div>
+</body>
 </html>
