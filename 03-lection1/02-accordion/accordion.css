@@ -8,7 +8,7 @@
     cursor: pointer;
 }
 
-.accordion p {
+.accordion .accordion__item {
     cursor: default;
 }
 
