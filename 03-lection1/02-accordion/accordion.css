@@ -8,12 +8,9 @@
     cursor: pointer;
 }
 
-.accordion .accordion__item {
-    cursor: default;
-}
-
 .accordion__item {
     margin-bottom: 8px;
+    cursor: default;
 }
 
 .accordion__item:last-child {
