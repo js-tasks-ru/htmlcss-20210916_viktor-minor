@@ -17,6 +17,12 @@
 
     --primary: var(--blue);
     --secondary: var(--purple);
+
+    --primary-hover-color: #2342C0;
+    --primary-active-color: #032cc4;
+    --secondary-hover-color: #5028C6;
+    --secondary-active-color: #401fa6;
+    --alternative-active-color: var(--grey-2);
 }
 
 * {
