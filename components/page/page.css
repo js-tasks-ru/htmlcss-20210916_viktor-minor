@@ -10,3 +10,22 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
+.app__container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.app__container__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.app__container__row:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.preview {
+    height: 1036px;
+    padding: 60px 0;
+}
