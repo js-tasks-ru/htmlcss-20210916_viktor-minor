@@ -1,0 +1,35 @@
+.skeleton {
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid var(--grey-2);
+}
+
+.skeleton__header {
+    display: flex;
+    align-items: center;
+}
+
+.skeleton__line-wrapper {
+    width: 100%;
+}
+
+.skeleton__circle {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+    margin-right: 24px;
+}
+
+.skeleton__content {
+    margin-top: 24px;
+}
+
+.skeleton__line {
+    height: 20px;
+    background: linear-gradient(92.51deg, var(--grey-2) 5%,  var(--grey-1) 25%,  var(--grey-2) 50%,  var(--grey-1) 70%,  var(--grey-2) 90%);
+}
+
+.skeleton__line:not(:last-child) {
+    margin-bottom: 8px;
+}
