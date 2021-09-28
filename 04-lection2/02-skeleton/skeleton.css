@@ -9,11 +9,11 @@
     align-items: center;
 }
 
-.skeleton__header__line__wrapper {
+.skeleton__line-wrapper {
     width: 100%;
 }
 
-.skeleton__header__circle {
+.skeleton__circle {
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -25,11 +25,11 @@
     margin-top: 24px;
 }
 
-.skeleton__header__line {
+.skeleton__line {
     height: 20px;
     background: linear-gradient(92.51deg, var(--grey-2) 5%,  var(--grey-1) 25%,  var(--grey-2) 50%,  var(--grey-1) 70%,  var(--grey-2) 90%);
 }
 
-.skeleton__header__line:not(:last-child) {
+.skeleton__line:not(:last-child) {
     margin-bottom: 8px;
 }
