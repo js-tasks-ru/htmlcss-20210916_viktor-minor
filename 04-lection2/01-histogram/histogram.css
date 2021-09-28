@@ -33,7 +33,7 @@
     height: 50px;
     display: flex;
     align-items: flex-end;
-    gap: 4px;
+    gap: 1px;
 }
 
 .histogram__content-item {
