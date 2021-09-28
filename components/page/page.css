@@ -16,16 +16,12 @@
     margin: 0 auto;
 }
 
-.app__container__row {
+.app__container-row {
     display: flex;
-    justify-content: space-between;
-}
-
-.app__container__row:not(:last-child) {
-    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .preview {
-    height: 1036px;
     padding: 60px 0;
 }
