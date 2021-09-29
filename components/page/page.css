@@ -10,3 +10,14 @@
     flex-direction: column;
     min-height: 100vh;
 }
+
+.app__container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.app__container-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}

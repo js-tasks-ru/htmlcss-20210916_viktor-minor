@@ -1,0 +1,15 @@
+.card {
+    width: 350px;
+    height: 367px;
+    border-radius: 12px;
+    box-shadow: 0 2px 4px var(--grey-2);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.card__title {
+    font-size: 20px;
+    line-height: 24px;
+}
