@@ -23,6 +23,8 @@
     --secondary-hover-color: #5028C6;
     --secondary-active-color: #401fa6;
     --alternative-active-color: var(--grey-2);
+
+    --light-blue: #A0B1F5;
 }
 
 * {
