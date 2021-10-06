@@ -1,0 +1,40 @@
+.accordion {
+    padding: 24px 32px;
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion__item {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    cursor: default;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion__summary {
+    display: flex;
+    justify-content: space-between;
+}
+
+.accordion__arrow {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.accordion__details[open] ~ .accordion__arrow {
+    transform: rotate(180deg);
+}
+
+.accordion__summary::marker {
+    display: none;
+}

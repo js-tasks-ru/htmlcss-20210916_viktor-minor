@@ -1,8 +1,37 @@
 .header {
-    padding: 40px 80px;
+    padding: 16px 0;
+}
+
+.header__logo-wrapper {
+    text-align: center;
+}
+
+.header__logo {
+    width: 110px;
+    height: 32px;
 }
 
 .header__title {
-    font-size: 50px;
-    line-height: 64px;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 400;
+    margin-top: 46px;
+}
+
+@media screen and (min-width: 400px){
+    .header {
+        padding: 96px 0 77px 0;
+    }
+
+    .header__title {
+        font-size: 50px;
+        line-height: 64px;
+        font-weight: 500;
+        margin-top: 0;
+
+    }
+
+    .header__logo-wrapper {
+        display: none;
+    }
 }
