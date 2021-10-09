@@ -1,7 +1,5 @@
 .histogram {
-    padding: 12px 15px;
     border-radius: 8px;
-    border: 1px solid var(--grey-2);
 }
 
 .histogram__header {

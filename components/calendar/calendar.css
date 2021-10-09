@@ -1,7 +1,6 @@
 .calendar {
     width: 100%;
     max-width: 400px;
-    padding: 12px 15px;
 }
 
 .calendar__title {
@@ -73,10 +72,6 @@
         font-size: 12px;
         line-height: 16px;
     }
-
-    .calendar {
-        padding: 12px 15px;
-    }
 }
 
 @media screen and (min-width: 768px){
@@ -94,10 +89,6 @@
         font-size: 14px;
         line-height: 20px;
     }
-
-    .calendar {
-        padding: 20px 24px;
-    }
 }
 
 @media screen and (min-width: 1024px){
@@ -114,9 +105,5 @@
     .calendar__item-date {
         font-size: 16px;
         line-height: 20px;
-    }
-
-    .calendar {
-        padding: 28px 30px;
     }
 }

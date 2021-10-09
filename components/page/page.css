@@ -13,13 +13,13 @@
 
 .app__container {
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 16px;
 }
 
 .app__container-row {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 23px 12px;
+    grid-template-columns: repeat(2, calc(50% - 8px));
+    gap: 16px;
 }
 
 @media screen and (min-width: 400px){
@@ -28,7 +28,7 @@
     }
 
     .app__container-row {
-        gap: 30px;
+        gap: 32px;
     }
 }
 
