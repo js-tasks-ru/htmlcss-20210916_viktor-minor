@@ -2,3 +2,7 @@
     flex: 1;
     background-color: var(--grey-1);
 }
+
+.main_histogram {
+    background: var(--white);
+}
