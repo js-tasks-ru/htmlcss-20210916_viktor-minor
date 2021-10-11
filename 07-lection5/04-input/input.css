@@ -46,10 +46,10 @@
     transform: translate(0, -50%);
 }
 
-.input__text_valid ~ .input__logo {
+.input__text_valid ~ .input__logo_success {
     display: block;
 }
-.input__text_error ~ .input__logo {
+.input__text_error ~ .input__logo_error {
     display: block;
 }
 
