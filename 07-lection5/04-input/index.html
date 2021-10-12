@@ -6,6 +6,69 @@
         <link rel="stylesheet" href="./input.css">
     </head>
     <body>
-
+    <label class="input" style="width: 300px">
+        <div class="input__label">Label</div>
+        <div class="input__text-wrapper">
+            <input
+              class="input__text"
+              type="text"
+              placeholder="Placeholder"
+            >
+        </div>
+    </label>
+    <label class="input" style="width: 300px">
+        <div class="input__label">Focus</div>
+        <div class="input__text-wrapper">
+            <input
+              class="input__text"
+              type="text"
+              placeholder="Placeholder"
+              value="Filled Input"
+              autofocus
+            >
+        </div>
+    </label>
+    <label class="input" style="width: 300px">
+        <div class="input__label">Disabled</div>
+        <div class="input__text-wrapper">
+            <input
+              class="input__text"
+              type="text"
+              disabled
+            >
+        </div>
+    </label>
+    <label class="input" style="width: 300px">
+        <div class="input__label">Success</div>
+        <div class="input__text-wrapper">
+            <input
+              class="input__text input__text_valid"
+              type="text"
+              value="Success"
+            >
+            <svg class="input__logo input__logo_success">
+                <use xlink:href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="input__logo input__logo_error">
+                <use xlink:href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </label>
+    <label class="input" style="width: 300px">
+        <div class="input__label">Error</div>
+        <div class="input__text-wrapper">
+            <input
+              class="input__text input__text_error"
+              type="text"
+              value="Error"
+            >
+            <svg class="input__logo input__logo_success">
+                <use xlink:href="../../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="input__logo input__logo_error">
+                <use xlink:href="../../assets/images/sprite.svg#error"></use>
+            </svg>
+        </div>
+    </label>
     </body>
 </html>
