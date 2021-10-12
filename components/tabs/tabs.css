@@ -16,7 +16,7 @@
     line-height: 24px;
     white-space: nowrap;
     cursor: pointer;
-    height: 37px;
+    border-bottom: 5px solid transparent;
 }
 
 .tabs__scroller {
@@ -25,7 +25,7 @@
 }
 
 #all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"] {
-    border-bottom: 5px solid var(--black);
+    border-bottom-color: var(--black);
 }
 
 .tabs__content_complex {
@@ -45,11 +45,11 @@
 }
 
 #atoms-tab:checked ~ .tabs__scroller .tabs__label[for="atoms-tab"] {
-    border-bottom: 5px solid var(--black);
+    border-bottom-color: var(--black);
 }
 
 #simple-tab:checked ~ .tabs__scroller .tabs__label[for="simple-tab"] {
-    border-bottom: 5px solid var(--black);
+    border-bottom-color: var(--black);
 }
 
 .tabs__label:not(:first-child) {
