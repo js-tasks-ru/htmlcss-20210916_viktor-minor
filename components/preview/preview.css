@@ -1,5 +1,6 @@
 .preview {
     padding: 21px 0;
+    background: var(--grey-1);
 }
 
 .modal_preview {

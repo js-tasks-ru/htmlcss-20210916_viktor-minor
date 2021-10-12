@@ -1,0 +1,61 @@
+.tabs{
+    background: var(--white);
+}
+
+.tabs__input {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    outline: none;
+    position: absolute;
+}
+
+.tabs__label {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    cursor: pointer;
+    border-bottom: 5px solid transparent;
+}
+
+.tabs__scroller {
+    background: var(--white);
+    border-bottom: 1px solid var(--grey-2);
+}
+
+#all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"] {
+    border-bottom-color: var(--black);
+}
+
+.tabs__content_complex {
+    display: none;
+}
+
+.tabs__content_simple {
+    display: none;
+ }
+
+#all-tab:checked ~ .tabs__content_complex {
+    display: block;
+}
+
+#atoms-tab:checked ~ .tabs__content_simple {
+    display: block;
+}
+
+#atoms-tab:checked ~ .tabs__scroller .tabs__label[for="atoms-tab"] {
+    border-bottom-color: var(--black);
+}
+
+#simple-tab:checked ~ .tabs__scroller .tabs__label[for="simple-tab"] {
+    border-bottom-color: var(--black);
+}
+
+.tabs__label:not(:first-child) {
+    margin-left: 40px;
+}
+
+.tabs__menu {
+    display: flex;
+}
