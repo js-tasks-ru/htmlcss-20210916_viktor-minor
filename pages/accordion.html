@@ -3,12 +3,7 @@
 <html lang="ru">
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/main.scss">
-  <link rel="stylesheet" href="../components/page/page.scss">
-  <link rel="stylesheet" href="../components/header/header.scss">
-  <link rel="stylesheet" href="../components/main/main.scss">
-  <link rel="stylesheet" href="../components/footer/footer.scss">
-  <link rel="stylesheet" href="../components/accordion/accordion.scss">
+  <link rel="stylesheet" href="../build/index.css">
 </head>
 <body>
 <div class="app">
@@ -24,39 +19,41 @@
   </header>
   <main class="main">
     <div class="app__container">
-      <div class="accordion">
-        <details class="accordion__details">
-          <summary class='accordion__summary'>
-            Accordion item 1
-          </summary>
-          <p class='accordion__item'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
-            aperiam architecto beatae dignissimos distinctio ea est expedita
-            inventore iure magnam nam nulla officiis placeat quia quisquam
-            quos reprehenderit temporibus vero? Blanditiis distinctio dolorem
-            doloremque dolores provident quisquam velit? Magni, possimus.
-          </p>
-        </details>
-        <svg class="accordion__arrow">
-          <use xlink:href="../assets/images/sprite.svg#arrow-down"></use>
-        </svg>
-      </div>
-      <div class="accordion">
-        <details class="accordion__details">
-          <summary class='accordion__summary'>
-            Accordion item 2
-          </summary>
-          <p class='accordion__item'>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
-            aperiam architecto beatae dignissimos distinctio ea est expedita
-            inventore iure magnam nam nulla officiis placeat quia quisquam
-            quos reprehenderit temporibus vero? Blanditiis distinctio dolorem
-            doloremque dolores provident quisquam velit? Magni, possimus.
-          </p>
-        </details>
-        <svg class="accordion__arrow">
-          <use xlink:href="../assets/images/sprite.svg#arrow-down"></use>
-        </svg>
+      <div class="component-page">
+        <div class="accordion">
+          <details class="accordion__details">
+            <summary class='accordion__summary'>
+              Accordion item 1
+            </summary>
+            <p class='accordion__item'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+              aperiam architecto beatae dignissimos distinctio ea est expedita
+              inventore iure magnam nam nulla officiis placeat quia quisquam
+              quos reprehenderit temporibus vero? Blanditiis distinctio dolorem
+              doloremque dolores provident quisquam velit? Magni, possimus.
+            </p>
+          </details>
+          <svg class="accordion__arrow">
+            <use xlink:href="../assets/images/sprite.svg#arrow-down"></use>
+          </svg>
+        </div>
+        <div class="accordion">
+          <details class="accordion__details">
+            <summary class='accordion__summary'>
+              Accordion item 2
+            </summary>
+            <p class='accordion__item'>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias,
+              aperiam architecto beatae dignissimos distinctio ea est expedita
+              inventore iure magnam nam nulla officiis placeat quia quisquam
+              quos reprehenderit temporibus vero? Blanditiis distinctio dolorem
+              doloremque dolores provident quisquam velit? Magni, possimus.
+            </p>
+          </details>
+          <svg class="accordion__arrow">
+            <use xlink:href="../assets/images/sprite.svg#arrow-down"></use>
+          </svg>
+        </div>
       </div>
     </div>
   </main>

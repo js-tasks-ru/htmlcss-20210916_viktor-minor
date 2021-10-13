@@ -15,6 +15,14 @@
     padding: 12px;
 }
 
+.card__body_center {
+    text-align: center;
+}
+
+.card__body_group {
+    display: flex;
+}
+
 .card__title {
     text-align: center;
     font-size: 16px;
