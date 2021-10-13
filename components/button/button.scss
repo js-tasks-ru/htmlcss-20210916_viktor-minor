@@ -16,7 +16,7 @@
 }
 
 .button_primary:hover:enabled {
-    background-color:  var(--primary-hover-color);
+    background-color: var(--primary-hover-color);
 }
 
 .button_primary:active:enabled {
@@ -50,7 +50,7 @@
 }
 
 .button:disabled {
-    opacity: 0.5;
+    opacity: .5;
     cursor: default;
     pointer-events: none;
 }

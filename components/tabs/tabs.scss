@@ -1,4 +1,4 @@
-.tabs{
+.tabs {
     background: var(--white);
 }
 
@@ -24,7 +24,7 @@
     border-bottom: 1px solid var(--grey-2);
 }
 
-#all-tab:checked ~ .tabs__scroller .tabs__label[for="all-tab"] {
+#all-tab:checked ~ .tabs__scroller .tabs__label[for='all-tab'] {
     border-bottom-color: var(--black);
 }
 
@@ -34,7 +34,7 @@
 
 .tabs__content_simple {
     display: none;
- }
+}
 
 #all-tab:checked ~ .tabs__content_complex {
     display: block;
@@ -44,11 +44,11 @@
     display: block;
 }
 
-#atoms-tab:checked ~ .tabs__scroller .tabs__label[for="atoms-tab"] {
+#atoms-tab:checked ~ .tabs__scroller .tabs__label[for='atoms-tab'] {
     border-bottom-color: var(--black);
 }
 
-#simple-tab:checked ~ .tabs__scroller .tabs__label[for="simple-tab"] {
+#simple-tab:checked ~ .tabs__scroller .tabs__label[for='simple-tab'] {
     border-bottom-color: var(--black);
 }
 
