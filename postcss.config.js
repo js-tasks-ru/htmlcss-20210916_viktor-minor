@@ -12,6 +12,7 @@ module.exports = {
     }),
     require('postcss-import'),
     require('postcss-nested'),
+    require('postcss-map-get'),
     require('autoprefixer'),
     require('cssnano'),
   ],

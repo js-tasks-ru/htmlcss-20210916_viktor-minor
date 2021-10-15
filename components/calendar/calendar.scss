@@ -2,109 +2,97 @@
     width: 100%;
     max-width: 400px;
     background: var(--white);
-}
-
-.calendar__title {
-    text-align: center;
-    font-size: 16px;
-    color: var(--grey-4);
-    font-weight: 600;
-    padding-bottom: 10px;
-}
 
 
-.calendar__item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-}
-
-.calendar__item-day {
-    font-size: 8px;
-    line-height: 12px;
-    color: var(--grey-3);
-}
-
-.calendar__item-date {
-    font-size: 10px;
-    line-height: 16px;
-    color: var(--grey-4);
-}
-
-.calendar__item-date_active {
-    color: var(--white);
-    background-color: var(--blue);
-}
-
-.calendar__item-date_range {
-    background-color: var(--light-blue);
-}
-
-.calendar__wrapper {
-    position: relative;
-    padding-bottom: 100%;
-}
-
-
-.calendar__inner {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-}
-
-@media screen and (min-width: 400px) {
-    .calendar__title {
-        font-size: 18px;
-        padding-bottom: 12px;
+    &__wrapper {
+        position: relative;
+        padding-bottom: 100%;
     }
 
-    .calendar__item-day {
-        font-size: 10px;
-        line-height: 14px;
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
     }
 
-    .calendar__item-date {
-        font-size: 12px;
-        line-height: 16px;
-    }
-}
+    &__title {
+        text-align: center;
+        color: var(--grey-4);
+        font-weight: 600;
+        padding-bottom: 10px;
 
-@media screen and (min-width: 768px) {
-    .calendar__title {
-        font-size: 20px;
-        padding-bottom: 20px;
-    }
+        @include font-size(16);
 
-    .calendar__item-day {
-        font-size: 12px;
-        line-height: 20px;
-    }
+        @include media-min(sm) {
+            padding-bottom: 12px;
+        }
 
-    .calendar__item-date {
-        font-size: 14px;
-        line-height: 20px;
-    }
-}
+        @include media-min(md) {
+            @include font-size(20);
+            padding-bottom: 20px;
+        }
 
-@media screen and (min-width: 1024px) {
-    .calendar__title {
-        font-size: 24px;
-        padding-bottom: 20px;
+        @include media-min(lg) {
+            @include font-size(24);
+            padding-bottom: 20px;
+        }
     }
 
-    .calendar__item-day {
-        font-size: 14px;
-        line-height: 20px;
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
     }
 
-    .calendar__item-date {
-        font-size: 16px;
-        line-height: 20px;
+    &__item-day {
+        @include font-size(8);
+        color: var(--grey-3);
+
+        @include media-min(sm) {
+            @include font-size(10);
+        }
+
+        @include media-min(md) {
+            @include font-size(12);
+        }
+
+        @include media-min(lg) {
+            @include font-size(14);
+        }
+    }
+
+    &__item-date {
+        @include font-size(10);
+        color: var(--grey-4);
+
+        @include media-min(sm) {
+            @include font-size(12);
+        }
+
+        @include media-min(md) {
+            @include font-size(14);
+        }
+
+        @include media-min(lg) {
+            @include font-size(16);
+        }
+
+        &_active {
+            color: var(--white);
+            background-color: var(--blue);
+        }
+
+        &_range {
+            background-color: var(--light-blue);
+        }
+
     }
 }

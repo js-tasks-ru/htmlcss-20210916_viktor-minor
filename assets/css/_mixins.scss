@@ -1,0 +1,16 @@
+@mixin media-min($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  }
+}
+
+@mixin font-size($size) {
+  @if map-has-key($font-sizes, $size) {
+    $sizes: map-get($font-sizes, $size);
+    font-size: map-get($sizes, font-size);
+    line-height: map-get($sizes, line-height);
+  }
+}
+
