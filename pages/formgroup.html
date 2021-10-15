@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<!-- Главная страница -->
+<html lang="ru">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../build/index.css">
+</head>
+<body>
+<div class="app">
+  <header class="header">
+    <div class="app__container">
+      <div class="header__logo-wrapper">
+        <svg class="header__logo">
+          <use xlink:href="../assets/images/sprite.svg#logo"></use>
+        </svg>
+      </div>
+      <h1 class="header__title">Form group</h1>
+    </div>
+  </header>
+  <main class="main">
+    <div class="app__container">
+      <div class="component-page component-page_form-group">
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox">
+          <div class="checkbox__state">
+            <div class="checkbox__control">
+              <svg
+                class="checkbox__icon"
+                width="15"
+                height="13"
+                viewBox="0 0 15 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 7.5L5 11L13 2"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="checkbox__label">
+              Default
+            </div>
+          </div>
+        </label>
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" checked>
+          <div class="checkbox__state">
+            <div class="checkbox__control">
+              <svg
+                class="checkbox__icon"
+                width="15"
+                height="13"
+                viewBox="0 0 15 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 7.5L5 11L13 2"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="checkbox__label">
+              Checked
+            </div>
+          </div>
+        </label>
+        <label class="checkbox">
+          <input class="checkbox__input" type="checkbox" disabled>
+          <div class="checkbox__state">
+            <div class="checkbox__control">
+              <svg
+                class="checkbox__icon"
+                width="15"
+                height="13"
+                viewBox="0 0 15 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.5 7.5L5 11L13 2"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="checkbox__label">
+              Disabled
+            </div>
+          </div>
+        </label>
+        <label class="radio">
+          <input class="radio__input" type="radio" name="name">
+          <div class="radio__state">
+            <div class="radio__control">
+              <div class="radio__icon"></div>
+            </div>
+            <div class="radio__label">
+              Default
+            </div>
+          </div>
+        </label>
+        <label class="radio">
+          <input class="radio__input" type="radio" name="name" checked>
+          <div class="radio__state">
+            <div class="radio__control">
+              <div class="radio__icon"></div>
+            </div>
+            <div class="radio__label">
+              Selected
+            </div>
+          </div>
+        </label>
+        <label class="radio">
+          <input class="radio__input" type="radio" name="name" disabled>
+          <div class="radio__state">
+            <div class="radio__control">
+              <div class="radio__icon"></div>
+            </div>
+            <div class="radio__label">
+              Disabled
+            </div>
+          </div>
+        </label>
+        <label class="toggler">
+          <input class="toggler__input" type="checkbox">
+          <div class="toggler__state">
+            <div class="toggler__control">
+              <div class="toggler__icon"></div>
+            </div>
+            <div class="toggler__label">
+              Off
+            </div>
+          </div>
+        </label>
+        <label class="toggler">
+          <input class="toggler__input" type="checkbox" checked>
+          <div class="toggler__state">
+            <div class="toggler__control">
+              <div class="toggler__icon"></div>
+            </div>
+            <div class="toggler__label">
+              On
+            </div>
+          </div>
+        </label>
+        <label class="toggler">
+          <input class="toggler__input" type="checkbox" disabled>
+          <div class="toggler__state">
+            <div class="toggler__control">
+              <div class="toggler__icon"></div>
+            </div>
+            <div class="toggler__label">
+              Disabled
+            </div>
+          </div>
+        </label>
+        <label class="input">
+          <div class="input__label">Label</div>
+          <div class="input__text-wrapper">
+            <input
+              class="input__text"
+              type="text"
+              placeholder="Placeholder"
+            >
+          </div>
+        </label>
+        <label class="input">
+          <div class="input__label">Focus</div>
+          <div class="input__text-wrapper">
+            <input
+              class="input__text"
+              type="text"
+              placeholder="Placeholder"
+              value="Filled Input"
+              autofocus
+            >
+          </div>
+        </label>
+        <label class="input">
+          <div class="input__label">Disabled</div>
+          <div class="input__text-wrapper">
+            <input
+              class="input__text"
+              type="text"
+              disabled
+            >
+          </div>
+        </label>
+        <label class="input">
+          <div class="input__label">Success</div>
+          <div class="input__text-wrapper">
+            <input
+              class="input__text input__text_valid"
+              type="text"
+              value="Success"
+            >
+            <svg class="input__logo input__logo_success">
+              <use xlink:href="../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="input__logo input__logo_error">
+              <use xlink:href="../assets/images/sprite.svg#error"></use>
+            </svg>
+          </div>
+        </label>
+        <label class="input">
+          <div class="input__label">Error</div>
+          <div class="input__text-wrapper">
+            <input
+              class="input__text input__text_error"
+              type="text"
+              value="Error"
+            >
+            <svg class="input__logo input__logo_success">
+              <use xlink:href="../assets/images/sprite.svg#success"></use>
+            </svg>
+            <svg class="input__logo input__logo_error">
+              <use xlink:href="../assets/images/sprite.svg#error"></use>
+            </svg>
+          </div>
+        </label>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="app__container">
+      <h2 class="footer__title">About</h2>
+      <p class="footer__info">
+        This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you
+        can drop into your projects. Get started by checking out our free preview components, or browsing the
+        PNG previews in the categories you're most curious about.
+      </p>
+    </div>
+  </footer>
+</div>
+</body>
+<script src="../components/modal/index.js"></script>
+</html>

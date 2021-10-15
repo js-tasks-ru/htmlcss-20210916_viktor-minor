@@ -1,0 +1,15 @@
+.component-page {
+    padding: 12px;
+    border: 1px solid var(--grey-2);
+    max-width: 400px;
+    background: var(--white);
+    text-align: center;
+    min-height: 200px;
+}
+
+.component-page_form-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}

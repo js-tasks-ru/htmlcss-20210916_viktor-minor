@@ -14,18 +14,25 @@
           <use xlink:href="../assets/images/sprite.svg#logo"></use>
         </svg>
       </div>
-      <h1 class="header__title">Buttons</h1>
+      <h1 class="header__title">Skeleton</h1>
     </div>
   </header>
   <main class="main">
     <div class="app__container">
       <div class="component-page">
-        <button class='button button_primary'>Primary</button>
-        <button class='button button_primary' disabled>Primary</button>
-        <button class='button button_secondary'>Secondary</button>
-        <button class='button button_secondary' disabled>Secondary</button>
-        <button class='button button_alternative'>Alternate</button>
-        <button class='button button_alternative' disabled>Alternate</button>
+        <div class="skeleton">
+          <div class="skeleton__header">
+            <div class="skeleton__circle"></div>
+            <div class="skeleton__line-wrapper">
+              <div class="skeleton__line" style="width: 45%"></div>
+              <div class="skeleton__line" style="width: 60%"></div>
+            </div>
+          </div>
+          <div class="skeleton__content">
+            <div class="skeleton__line"></div>
+            <div class="skeleton__line"></div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
