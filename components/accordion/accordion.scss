@@ -10,6 +10,7 @@
     margin-top: 8px;
     margin-bottom: 8px;
     cursor: default;
+    color: var(--text-secondary);
 }
 
 .accordion__item:last-child {
@@ -19,6 +20,7 @@
 .accordion__summary {
     display: flex;
     justify-content: space-between;
+    color: var(--text-secondary);
 }
 
 .accordion__arrow {

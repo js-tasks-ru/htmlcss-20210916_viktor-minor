@@ -11,21 +11,46 @@
 }
 
 .tabs__label {
+    position: relative;
     display: inline-block;
     font-size: 16px;
     line-height: 24px;
     white-space: nowrap;
     cursor: pointer;
     border-bottom: 5px solid transparent;
+    color: var(--text-secondary);
+}
+.tabs__label:hover {
+    color: var(--text-primary);
+}
+
+
+.tabs__label::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    top: 100%;
+    background-color: var(--font-color);
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+.tabs__label:hover::after {
+    transform: scaleX(1);
 }
 
 .tabs__scroller {
-    background: var(--white);
+    background: var(--main-bg);
     border-bottom: 1px solid var(--grey-2);
 }
 
+#all-tab:checked ~ .tabs__scroller .tabs__label[for='all-tab']::after {
+    transform: scaleX(1);
+}
+
 #all-tab:checked ~ .tabs__scroller .tabs__label[for='all-tab'] {
-    border-bottom-color: var(--black);
+    color: var(--text-primary);
 }
 
 .tabs__content_complex {
@@ -44,12 +69,20 @@
     display: block;
 }
 
+#atoms-tab:checked ~ .tabs__scroller .tabs__label[for='atoms-tab']::after {
+    transform: scaleX(1);
+}
+
 #atoms-tab:checked ~ .tabs__scroller .tabs__label[for='atoms-tab'] {
-    border-bottom-color: var(--black);
+    color: var(--text-primary);
+}
+
+#simple-tab:checked ~ .tabs__scroller .tabs__label[for='simple-tab']::after {
+    transform: scaleX(1);
 }
 
 #simple-tab:checked ~ .tabs__scroller .tabs__label[for='simple-tab'] {
-    border-bottom-color: var(--black);
+    color: var(--text-primary);
 }
 
 .tabs__label:not(:first-child) {
