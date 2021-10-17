@@ -4,15 +4,61 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./build/index.css">
+  <script defer src="components/burger-menu/burger-menu.js"></script>
+  <script defer src="components/dark-theme/theme-changer.js"></script>
 </head>
 <body>
 <div class="app">
+  <div
+    id="burger-menu"
+    class="burger-menu"
+  >
+    <div class="burger-menu__header">
+      <button
+        id="burger-menu-close"
+        class="burger-menu__icon-wrapper"
+      >
+        <svg class="burger-menu__icon">
+          <use xlink:href="assets/images/sprite.svg#close"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="burger-menu__content">
+      <div class="burger-menu__item-group">Components</div>
+      <a href="pages/calendar.html" class="burger-menu__item">Avatar</a>
+      <a href="pages/histogram.html" class="burger-menu__item">Histogram</a>
+      <a href="pages/modal.html" class="burger-menu__item">Modal</a>
+      <a href="pages/accordion.html" class="burger-menu__item">Accordion</a>
+      <a href="pages/button.html" class="burger-menu__item">Button</a>
+      <a href="pages/tooltip.html" class="burger-menu__item">Tooltip</a>
+      <a href="pages/skeleton.html" class="burger-menu__item">Skeleton</a>
+      <a href="pages/formgroup.html" class="burger-menu__item">Form group</a>
+    </div>
+  </div>
   <header class="header">
     <div class="app__container">
       <div class="header__logo-wrapper">
+        <button
+          id="burger-menu-open"
+          class="burger-menu__icon-wrapper"
+        >
+          <svg class="burger-menu__icon">
+            <use xlink:href="assets/images/sprite.svg#burger-menu"></use>
+          </svg>
+        </button>
         <svg class="header__logo">
           <use xlink:href="assets/images/sprite.svg#logo"></use>
         </svg>
+        <div>
+          <label class="toggler">
+            <input class="toggler__input" type="checkbox" id="theme-changer">
+            <div class="toggler__state">
+              <div class="toggler__control">
+                <div class="toggler__icon"></div>
+              </div>
+            </div>
+          </label>
+        </div>
       </div>
       <h1 class="header__title">Reusable component library</h1>
     </div>

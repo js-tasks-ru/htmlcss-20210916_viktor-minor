@@ -16,7 +16,7 @@
 
 .app__container-row {
     display: grid;
-    grid-template-columns: repeat(2, calc(50% - 8px));
+    grid-template-columns: 1fr;
     gap: 16px;
 }
 
@@ -26,7 +26,8 @@
     }
 
     .app__container-row {
-        gap: 32px;
+        grid-template-columns: repeat(2, calc(50% - 8px));
+        gap: 16px;
     }
 }
 

@@ -1,8 +1,9 @@
 .card {
     max-width: 350px;
+    min-height: 300px;
     border-radius: 12px;
     box-shadow: 0 2px 4px var(--grey-2);
-    background-color: var(--white);
+    background-color: var(--card-bg);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -31,6 +32,7 @@
     border-top: 1px solid var(--grey-2);
     padding: 10px 0;
     width: 100%;
+    color: var(--text-secondary);
 }
 
 @media screen and (min-width: 400px) {
